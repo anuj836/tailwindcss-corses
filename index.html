@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./dist/tailwind.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body id="home" class="bg-grey-100">
@@ -62,7 +63,7 @@
   <section id="intro" class="bg-gradient-to-r from-blue-200 lg:p-10 md:p-5">
     <div class="grid md:grid-cols-2 grid-cols-1">
       <div id="intro-text"
-        class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:p-5 mb-5">
+        class="flex flex-col justify-center align-middle text-center md:text-left p-2 lg:p-10 md:p-5 mb-5 wow animate__animated animate__fadeInLeft">
         <h1 class="text-sm">Hello, I am <i class="fa fa-code"></i></h1>
         <h1 class="lg:text-6xl md:text-4xl text-3xl mt-1">ANUJ DESHMUKH</h1>
         <h1 class="lg:text-4xl md:text-3xl  text-2xlmt-5">Web UI/UX Designer</h1>
@@ -80,7 +81,8 @@
 
       </div>
 
-      <div id="intro-image" class="flex flex-col justify-center md:justify-start align-middle p-3 lg:p-10 md:p-5">
+      <div id="intro-image"
+        class="flex flex-col justify-center md:justify-start align-middle p-3 lg:p-10 md:p-5 wow animate__animated animate__fadeInRight">
         <img src="images/my pic.svg" />
       </div>
     </div>
@@ -92,32 +94,32 @@
       <h1 class="text-5xl">Blogs</h1>
     </div>
 
-    <div class="grid lg:grid-cols-5 md:grid-cols-3 gap-5">
-      <div class="rounded-xl bg-blue-200 p-8">
+    <div class="grid lg:grid-cols-5 md:grid-cols-3 gap-5 wow animate__animated animate__zoomIn">
+      <div class="rounded-xl bg-blue-200 p-8 wow animate__animated animate__zoomIn">
         <img class="rounded-xl" src="images/blog 1.jpg">
         <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
         <P class="mt-3 text-sm">Learn Html for free . Certfied course , project devlopment , earning websites . </P>
       </div>
 
-      <div class="rounded-xl bg-pink-200 p-8">
+      <div class="rounded-xl bg-pink-200 p-8 wow animate__animated animate__zoomIn">
         <img class="rounded-xl" src="images/blog 2.jpg">
         <h1 class="text-2xl mt-6 font-bold">Learn CSS</h1>
         <P class="mt-3 text-sm">Learn Html for free . Certfied course , project devlopment , earning websites . </P>
       </div>
 
-      <div class="rounded-xl bg-blue-200 p-8">
+      <div class="rounded-xl bg-blue-200 p-8 wow animate__animated animate__zoomIn">
         <img class="rounded-xl" src="images/blog 1.jpg">
         <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
         <P class="mt-3 text-sm">Learn Html for free . Certfied course , project devlopment , earning websites . </P>
       </div>
 
-      <div class="rounded-xl bg-pink-200 p-8">
+      <div class="rounded-xl bg-pink-200 p-8 wow animate__animated animate__zoomIn">
         <img class="rounded-xl" src="images/blog 2.jpg">
         <h1 class="text-2xl mt-6 font-bold">Learn CSS</h1>
         <P class="mt-3 text-sm">Learn Html for free . Certfied course , project devlopment , earning websites . </P>
       </div>
 
-      <div class="rounded-xl bg-blue-200 p-8">
+      <div class="rounded-xl bg-blue-200 p-8 wow animate__animated animate__zoomIn">
         <img class="rounded-xl" src="images/blog 1.jpg">
         <h1 class="text-2xl mt-6 font-bold">Learn HTML</h1>
         <P class="mt-3 text-sm">Learn Html for free . Certfied course , project devlopment , earning websites . </P>
@@ -275,11 +277,11 @@
   </section>
 
   <footer id="contact" class="p-20 text-center bg-gray-900">
-    <i class="fas fa-star mb-4 text-white"></i>
+    <i class="fas fa-star mb-4 text-white wow animate__animated animate__zoomIn"></i>
 
-    <h1 class="md:text-4xl text-1xl my-3 text-white">anujdeshmukh836@gmail.com</h1>
+    <h1 class="md:text-4xl text-1xl my-3 text-white wow animate__animated animate__zoomIn">anujdeshmukh836@gmail.com</h1>
 
-    <div class="my-10 text-gray-500 text-sm">
+    <div class="my-10 text-gray-500 text-sm wow animate__animated animate__zoomIn">
       <a href="https://www.facebook.com" class="p-3 hover:text-gray-100"><i class="fab fa-facebook-f"></i></a>
       <a href="https://www.twitter.com" class="p-3 hover:text-gray-100"><i class="fab fa-twitter"></i></a>
       <a href="https://www.instagram.com" class="p-3 hover:text-gray-100"><i class="fab fa-instagram"></i></a>
@@ -301,9 +303,12 @@
     }
   </script>
 
+  <script src="js/wow.min.js"></script>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       new Splide('.splide').mount();
+      new WOW().init();
     });
   </script>
 
